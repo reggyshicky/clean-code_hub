@@ -1,3 +1,3 @@
 Clean Code
 ---
-Key programs/Takeaways on creating a simple shell
+Key programs/Takeaways Across Most programming languages ie python, C, Javascript
