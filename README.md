@@ -1,1 +1,3 @@
-Clean codes on various challenging programs, across most programming languages.
+Clean Code
+---
+Key programs/Takeaways on creating a simple shell
