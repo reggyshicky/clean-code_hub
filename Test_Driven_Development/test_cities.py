@@ -10,5 +10,11 @@ class DetailsTestCase(unittest.TestCase):
         full_details = get_city_details('nairobi', 'kenya')
         self.assertEqual(full_details, 'Nairobi Kenya')
 
+    def test_city_country_population(self):
+        """Do details like 'Nairobi, Kenya, 10000' work?"""
+        full_details = get_city_details('nairobi', 'kenya', '10000')
+        self.assertEqual(full_details, 'Nairobi Kenya 10000')
+
+
 
 unittest.main()
