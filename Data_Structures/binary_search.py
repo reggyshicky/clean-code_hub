@@ -2,7 +2,7 @@
 """
 Implementing binary search in regard to
 Logarithmic Time —  O(log n)
-Code perform a binary search on a sorted list to find the index of 
+Code performs a binary search on a sorted list to find the index of 
 a given value
 """
 
