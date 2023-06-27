@@ -1,0 +1,34 @@
+Lomuto's partition scheme is a popular algorithm used in quicksort to partition an array into two parts based on a chosen pivot element. The algorithm is named after Nico Lomuto, who introduced it.
+
+The Lomuto partition algorithm works as follows:
+
+1. Choose a pivot element from the array. This pivot can be any element in the array, but for simplicity, let's assume the last element of the array is chosen as the pivot.
+2. Initialize two pointers, `i` and `j`. `i` will be used to scan the array from left to right, while `j` will keep track of the boundary between elements less than or equal to the pivot and elements greater than the pivot.
+3. Start iterating through the array from the beginning (index 0) until the second-to-last element (as the last element is the pivot).
+   - If the current element is less than or equal to the pivot, swap it with the element at index `j` and increment `j`.
+4. Once the iteration is complete, swap the pivot element (located at the last index) with the element at index `j`.
+   - Now, all the elements to the left of index `j` are less than or equal to the pivot, and all the elements to the right of index `j` are greater than the pivot.
+5. Return the index `j`, which represents the final position of the pivot after the partitioning.
+
+Here's an example to illustrate the Lomuto partition algorithm:
+
+Consider the array: [7, 2, 1, 6, 8, 5, 3, 4]
+
+Choosing the last element, 4, as the pivot, we start the partitioning process:
+
+1. Initialize `i = 0` and `j = 0`.
+2. Iterate through the array:
+   - i = 0: 7 > 4 (no swap)
+   - i = 1: 2 <= 4 (swap 2 and 7, increment j to 1)
+   - i = 2: 1 <= 4 (swap 1 and 7, increment j to 2)
+   - i = 3: 6 > 4 (no swap)
+   - i = 4: 8 > 4 (no swap)
+   - i = 5: 5 > 4 (no swap)
+   - i = 6: 3 <= 4 (swap 3 and 8, increment j to 3)
+   - i = 7: 4 > 4 (no swap)
+3. Swap the pivot (4) with the element at index `j` (3). The array becomes: [3, 2, 1, 4, 8, 5, 6, 7]
+4. Return the final index of the pivot, which is 3.
+
+After Lomuto partitioning, the elements to the left of index 3 (including index 3) are less than or equal to the pivot (4), and the elements to the right of index 3 are greater than the pivot.
+
+This partitioning step is commonly used in the quicksort algorithm to recursively sort the array by applying the same process to the subarrays on both sides of the pivot.
