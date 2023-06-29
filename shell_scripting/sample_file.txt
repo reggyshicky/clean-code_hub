@@ -1,0 +1,12 @@
+The 'more' command is a command-line utility in Unix-like operating systems that allows you to view the contents of a file or the output of a command in a paginated manner. It is often used to display long texts or files that don't fit on a single screen.
+
+When you use the more command, it displays one page of text at a time. You can navigate through the text using keyboard commands. Here are some common commands available when using more:
+
+Enter/Spacebar: Scroll down one line or one screenful.
+B: Scroll up one screenful.
+Q: Quit the more command.
+**/: Search for a specific pattern in the text. Press "n" to find the next occurrence.
+G: Go to the end of the text.
+1G: Go to the beginning of the text.
+H: Display a help screen with more commands.
+For example, you can use the more command to view the contents of a file by providing the filename as an argument:
