@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./images/cross.png">
+    <title>HTML forms</title>
+</head>
+<body>
+    <h1>HTML forms</h1>
+    <a href="https://www.youtube.com/watch?v=D3iEE29ZXRM&list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G&index=4">Html forms tutorials</a>
+    <br><br>
+    <form action="">
+        <label for="username">Enter username:</label>
+        <input type="text" id="username" name="username" placeholder="username" required>
+        <br><br>
+        <label for="email">Enter email:</label>
+        <input type="email" id="email" name="email" placeholder="your email" required>
+        <br><br>
+        <label for="password">Enter passowrd:</label>
+        <input type="password" id="password" name="password" placeholder="choose a password" required>
+        <!--requred is used to make a label a requiremt, if you submit when empty, you get a warning-->
+        <!--input is where a user enters data, label is just label besides indicating what user has to fill in-->
+        <p>Select your age:</p>
+        <input type="radio" name="age" value="0-25" id="option-1">
+        <label for="option-1">0-25</label>
+        <br><br>
+        <input type="radio" name="age" value="26-50" id="option-2">
+        <label for="option-2">26-50</label>
+        <br><br>
+        <input type="radio" name="age" value="51-70" id="option3">
+        <label for="option-3">51+</label>
+        <br><br>
+
+        <label for="">security questions:</label>
+        <select name="question" id="question">
+            <option value="q1">What your favourite color</option>
+            <option value="q2">What your primary school</option>
+            <option value="q3">Who was your favourite teacher</option>
+        </select>
+        <br><br>
+        <label for="answer">security questinon answer:</label>
+        <input type="text" id="answer" name="answer">
+
+        <br><br>
+        <label for="bio">Your bio</label><br>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you..."></textarea>
+
+        <br><br>
+        <input type="submit" value="submit the form">
+
+    </form>
+</body>
+</html>
