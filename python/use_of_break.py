@@ -7,5 +7,8 @@ while True: # start an infinite loop, the code within this loop will keep runnin
         print("Not an Integer")
 
 for i in range(n):
-    print("#")
+    print("?", end="")
+print()
+# end parameter is used in the print() function is used to specify what should be printed at the end of the
+# printed content instead of the default newline character ('\n'). 
     
