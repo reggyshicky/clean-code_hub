@@ -10,3 +10,4 @@ ans = division(4, 0)
 print(ans)
 ans21 = division(4,2)
 print(ans21)
+
