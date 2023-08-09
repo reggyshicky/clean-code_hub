@@ -64,4 +64,4 @@ for item in dict.items():
 dict1 = {'first': 'sunday', 'second': 'monday', 'third': 'tuesday' }
 dict2 = {1: 3, 2: 4, 3: 5}
 dict1.update(dict2)
-print(dict1)
+print(dict1) #output {'first': 'sunday', 'second': 'monday', 'third': 'tuesday', 1: 3, 2: 4, 3: 5}
