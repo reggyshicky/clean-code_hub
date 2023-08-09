@@ -8,4 +8,4 @@ print(s) #output one,two,three
 
 """Split() function splits the string into a list of substrings (tokens) based on the specified delimiters"""
 newlist = s.split(',')
-print(newlist)
+print(newlist) #output ['one', 'two', 'three']
