@@ -32,3 +32,12 @@ print(example) #output ['Betty', 'Home', 'Reggy', 'Shicky']
 #sort in descending order
 example.sort(reverse = True) 
 print(example) #output ['Shicky', 'Reggy', 'Home', 'Betty']
+
+#List concatenation
+example = ["Sunday", "Monday", "Tuesday", "Wednesday"];
+example1 = ["Weekdays", "Weekends"]
+# Concatenation
+example = example + example1
+print(example)
+# Output:
+# ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Weekdays', 'Weekend
