@@ -5,6 +5,8 @@ const person = {
 const myDataName = "height";
 const myDataValue = "1.75m";
 person[myDataName] = myDataValue; 
+//Adding a property to an obj using the method above is not possible with dot notation, which can only accept a literal member
+//not a variable value pointing to a  name
 //setting object members
 person.name[1] = "Reggy";
 person.age = 24;
