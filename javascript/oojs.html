@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Object-oriented JavaScript example</title>
+  </head>
+
+  <body>
+    <p>This example requires you to enter commands in your browser's JavaScript console (see <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">What are browser developer tools</a> for more information).</p>
+    
+    <script>
+        const person = {
+          name: ["Bob", "Smith"],
+          age: 32,
+          bio() {
+            console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old.`);
+          },
+          introducesSelf () {
+            console.log(`Hi! I'm ${this.name[0]}.`);
+          }
+        };
+        person.age = 45;
+        person.name[1] = "Reggy";
+    </script>
+  </body>
+
+</html>
+<!--An object property can itself, eg trying to change the name member
+to const person = {
+    first: "Bob",
+    last: "Smith",
+} To access these items you need to chain the extra step onto the end with another dot
+person.name.first , person.name.
+
+BRACKET NOTATION
+Bracket notation provides an alternative way to access object properties.
+person.["age"];  person["name"]["first"];
+Dot notation is generally preferred over bracket notation it is more succint and easier to read.
+However there are some cases where you have to use brackets.For example, if an obj property name is held
+in a variable, then you access the value using a bracket notation
+}-->
+
