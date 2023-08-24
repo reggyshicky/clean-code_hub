@@ -1,14 +1,13 @@
-const myBoolean = true;
-const myString = 'hello world';
-const myFirstNumber = 20;
-let mySecondNumber = 40;
-mySecondNumber = 80
-
-const myArray = [myBoolean, myString];
-const myObject = {
-    firstProperty: myArray,
-    sumProperty:  parseInt(myFirstNumber) + parseInt(mySecondNumber)
-};
-console.log(myObject)
-console.log(myObject.firstProperty[1])
-console.log(myObject.sumProperty)
+function calculateTip(billAmount) {
+    if (billAmount >= 50 && billAmount <= 300) {
+        tipPercentage = 15;
+} else {
+    tipPercentage = 20;
+}
+tipAmount = billAmount * tipPercentage / 100;
+totalAmount = billAmount + tipAmount;
+return `The bill amount is ${billAmount} and the total amount is ${totalAmount}`;
+}
+console.log(calculateTip(275));
+console.log(calculateTip(48));
+console.log(calculateTip(430)); 
