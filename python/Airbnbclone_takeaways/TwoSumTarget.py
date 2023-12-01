@@ -1,4 +1,5 @@
 def SumTwoNumber_Target(arr, target):
+    # this approach is for sorted array
     left = 0
     right = len(arr) - 1
     # Two pointers logic
