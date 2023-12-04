@@ -19,3 +19,6 @@ function TwoSumTarget(arr, target) {
 
 console.log(TwoSumTarget([1,2,3,4,5], 5));
 console.log(TwoSumTarget([1,2,3,4,5], 50));
+
+myarr = [1, 5, 9, 10]
+console.log(typeof(myarr))
