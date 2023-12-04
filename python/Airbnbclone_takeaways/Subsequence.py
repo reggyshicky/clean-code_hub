@@ -16,7 +16,7 @@ def  Subsequence(subsequence, originalstring):
         j += 1
     return i == len(subsequence)
 
-Subsequencestring = "abe"
-fullstring = "abcdefgh"
+Subsequencestring = "ai"
+fullstring = "manequin"
 
 print(Subsequence(Subsequencestring, fullstring))
